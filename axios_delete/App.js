@@ -7,7 +7,6 @@ export default function App() {
 
   const API = "http://10.110.12.26:3000/users";
 
-  // Buscar usuários
   const fetchUsers = async () => {
     try {
       const response = await axios.get(API);
@@ -17,7 +16,6 @@ export default function App() {
     }
   };
 
-  // Deletar usuário
   const deleteUser = async (id) => {
     try {
       await axios.delete(`${API}/${id}`);
